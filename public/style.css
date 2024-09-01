@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 38px;
+}
+
+.container{
+    width: 90%;
+    max-width: 470px;
+    background-color: rgb(237, 201, 207);
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: left;
+}
+
+.heading{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.entertext{
+    max-width: 440px;
+    border: 3px solid rgb(208, 136, 188);
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 13px;
+    
+}
+
+.entertext input{
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+    border: none;
+    background-color: aliceblue;
+    padding-top: 2px;
+}
+
+.entertext button{
+   border: none;
+   color: white;
+   background-color: rgb(232, 79, 117);
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   font-size: 50px;
+   display: flex;  /*to center + symbol isnide circle */
+   align-items: center;
+   justify-content: center;
+   padding-top: 5px;
+   font-family: 'Courier New', Courier, monospace;
+   margin-right: 0px;
+}
+
+.entertext button:hover{
+    background-color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.item {
+    display: flex; /* Aligns items in a row */
+    justify-content: space-between; /* Pushes checkbox to the right */
+    align-items: center; /* Vertically centers the checkbox with the text */
+    border: 3px solid rgb(208, 136, 188);
+    background-color: rgb(255, 194, 205);
+    border-radius: 20px;
+    padding: 13px;
+    margin: 15px 0;
+    word-wrap: break-word; /* Ensures words break to the next line */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.item p {
+    margin-left: 10px;
+    flex: 1; /* Ensures text takes up available space */
+    padding-right: 15px; /* Adds space between text and checkbox */
+    word-wrap: break-word; /* Ensures words break to the next line */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+
+/* Strikethrough text when checkbox is checked */
+.item .checkbox:checked ~ p {
+    text-decoration: line-through;
+    color: gray; /* Optional: change the text color when struck through */
+}
+
+/* Custom Checkbox */
+.checkbox {
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none; /* Remove default checkbox styling */
+    appearance: none;
+    background-color: rgb(255, 194, 205); /* Same as item background */
+    border: 2px solid rgb(208, 136, 188); /* Border matching item */
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Checkbox tick (checkmark) */
+.checkbox:checked::before {
+    content: '✔'; /* Unicode checkmark */
+    color: rgb(59, 168, 59);
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+.checkbox:hover{
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: rgb(255, 194, 205); /* Background same as item */
+}
+
+.delete{
+    height: 20px;
+    width: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    background-color: transparent;
+}
+
+.delete ion-icon:hover{
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+

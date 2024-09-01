@@ -1,0 +1,36 @@
+<html>
+    <head><title>To Do List</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="heading">
+            <h2>To Do List</h2>
+        </div>
+        <div class="items">
+            <% for(var i=0; i< ejsarr.length; i++){  %>  
+                <div class="item">
+                    <input type="checkbox" class="checkbox">
+                    <p><%= ejsarr[i].taskname %></p>
+
+                    <form action="/delete" method="POST">
+                        <input type="hidden" name="delete" value= "<%= ejsarr[i]._id %>">
+                        <button type="submit" class="delete"><ion-icon name="trash-outline"></ion-icon></i></button>
+                    </form>
+                </div>
+            <% } %>
+         </div>         
+        
+        <div class="entertext">
+         <form action="/" method="POST">  <%# whatever form is submited as POST will be received by app.post in app.js and store inside items[] array using req.body.listelement %>
+            <input type="text" name="listelement" placeholder="Enter any text">
+            <button type="submit">+</button>
+         </form>
+        </div>
+
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
