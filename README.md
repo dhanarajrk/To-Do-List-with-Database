@@ -83,4 +83,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+Feel free to use my Project. Happy Coding! :) 
