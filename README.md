@@ -14,10 +14,10 @@ A simple To-Do List application built using Node.js, Express, MongoDB, and EJS. 
 
 ## Features
 
-- Add tasks to the to-do list.
-- Delete tasks from the to-do list.
-- Tasks are stored in a MongoDB database.
-- The UI is dynamically updated using EJS templates.
+- Add tasks to the to-do list. ✅
+- Delete tasks from the to-do list. ❌
+- Tasks are stored in a MongoDB database. 🗄️
+- The UI is dynamically updated using EJS templates. ✨
 
 ## Installation
 
